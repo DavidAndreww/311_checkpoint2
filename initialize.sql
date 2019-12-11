@@ -42,8 +42,8 @@ CREATE TABLE usersPaymentInfo(
   REFERENCES users (id)
 );
 CREATE TABLE usersOrder(
-  id INTO NOT NULL AUTO_INCREMENT,
-  user_id INTO NOT NULL,
+  id INT NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
   itemId VARCHAR(50),
   itemDesc VARCHAR(50),
 );
